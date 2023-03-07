@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: beige;
+    top: 0;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: brown;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.job {
+    background-color: aquamarine;
+    position: relative;
+    margin-top: 100px;
+}
