@@ -14,8 +14,15 @@ header {
     justify-content: space-between;
 }
 
+header div {
+    margin-top: auto;
+    margin-bottom: auto;
+    /* display: block; */
+    /* margin: auto; */
+}
+
 footer {
-    background-color: brown;
+    background-color:blanchedalmond;
     bottom: 0;
     position: absolute;
     text-align: center;
@@ -24,6 +31,17 @@ footer {
 
 .job {
     background-color: aquamarine;
+    border-radius: 7px;
     position: relative;
-    margin-top: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.job-bottom {
+    justify-content: space-between;
+}
+
+.filter {
+    position: relative;
+    margin: 100px 10px 0px;
 }
