@@ -17,8 +17,14 @@ header {
 header div {
     margin-top: auto;
     margin-bottom: auto;
-    /* display: block; */
-    /* margin: auto; */
+}
+
+.header-buttons {
+    display: flex;
+}
+
+.add-job-button {
+    margin-right: 10px;
 }
 
 footer {
@@ -33,12 +39,26 @@ footer {
     background-color: aquamarine;
     border-radius: 7px;
     position: relative;
-    margin: 10px;
+    margin: 0px 10px;
     padding: 10px;
 }
 
-.job-bottom {
+.job-top {
+    display: flex;
     justify-content: space-between;
+}
+
+.job-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-bottom-icons {
+    display: flex;
+}
+
+.icons {
+    padding-left: 20px;
 }
 
 .filter {

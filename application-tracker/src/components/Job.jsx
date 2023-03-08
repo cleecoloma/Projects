@@ -10,16 +10,17 @@ function Job() {
                 <div className="job-top">
                     <p>Job Title</p>
                     <Button variant="success">Apply</Button>
-                    <p>Apply</p>
                 </div>
                 <div>
                     <p>Company</p>
                 </div>
                 <div className="job-bottom">
-                    <a href="">Link</a>
-                    <p>Watchlist</p>
-                    <p>Edit</p>
-                    <p>Delete</p>
+                    <Button variant="primary">Link</Button>
+                    <div className="job-bottom-icons">
+                        <p className="icons">Watchlist</p>
+                        <p className="icons">Edit</p>
+                        <p className="icons">Delete</p>
+                    </div>
                 </div>
             </div>
         </section>
