@@ -2,15 +2,15 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Job from "./Job";
-import Form from "./Form"
+import AddJob from "./Modal";
 
 
 function App() {
   return (
     <div>
       <Header />
-      <Form />
       <Job />
+      <AddJob />
       <Footer />
     </div>
   );

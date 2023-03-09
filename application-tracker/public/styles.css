@@ -24,7 +24,11 @@ header div {
 }
 
 .add-job-button {
-    margin-right: 10px;
+    margin: 10px;
+}
+
+.view-mode {
+    margin: 10px;;
 }
 
 footer {
@@ -66,72 +70,18 @@ footer {
     margin: 100px 10px 0px;
 }
 
-.form-area {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: lightpink;
-    padding: 10px;
-    border-radius: 10px;
-    z-index: 10;
-    width: 600px;
-    max-width: 80%;
-}
-
-/* .form.active {
-    transform: translate(-50%, -50%) scale(1);
-} */
-
-form input {
-    padding: 4px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #f9f9f9;
-    width: 100%;
-    margin-top: 10px;
-    align-items: center;
-}
-
-.form-header {
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid;
-}
-
-.form-header .form-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-.form-header .form-close {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background-color: lightpink;
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-#overlay {
-    position: fixed;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
-    pointer-events: none;
-}
-
-/* #overlay.active {
-    opacity: 1;
-    pointer-events: all;
-} */
-
 .add-job-button {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
+
+form input {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
