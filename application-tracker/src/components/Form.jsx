@@ -33,26 +33,29 @@ function Form() {
         onAdd(job);
     }
 
+    function onDelete(){
+        
+    }
+
     return (
-        <form>
-            <label>
-                Job Title: 
-                <input onChange={handleChange} type="text" name="jobTitle" value={job.title}/>
-            </label>
-            <label>
-                Company: 
-                <input onChange={handleChange} type="text" name="company" value={job.company}/>
-            </label>
-            <label>
-                Location: 
-                <input onChange={handleChange} type="text" name="location" value={job.location}/>
-            </label>
-            <label>
-                Link: 
-                <input onChange={handleChange} type="text" name="link" value={job.link}/>
-            </label>
-            <Button onClick={handleClick}>Add Job</Button>
-        </form>
+        <div className="form-area">
+            <div className="form-header">
+                <div className="form-title">
+                    New Job
+                </div>
+                <button className="form-close" onClick={onDelete}>&times;</button>
+            </div>
+            <form>
+                <input onChange={handleChange} type="text" name="jobTitle" placeholder="Job Title" value={job.title} required/>
+                <input onChange={handleChange} type="text" name="company" placeholder="Company" value={job.company} required/>
+                <input onChange={handleChange} type="text" name="location" placeholder="Location" value={job.location} required/>
+                <input onChange={handleChange} type="text" name="link" placeholder="URL link" value={job.link} required/>
+                <div className="add-job-button">
+                    <Button onClick={handleClick}>Add</Button>
+                </div>
+            </form>
+            <div id="overlay"></div>
+        </div>
     );
 }
 
