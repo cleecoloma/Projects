@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
 
 function Form() {
     const [job, setJob] = useState({
@@ -19,19 +17,6 @@ function Form() {
                 [name]: value
             }
         })
-    }
-
-    function onAdd(event) {
-        setJob({
-            title: "",
-            company: "",
-            location: "",
-            link: ""
-        })
-    }
-
-    function handleClick() {
-        onAdd(job);
     }
 
     return (
