@@ -19,6 +19,15 @@ function Form() {
         })
     }
 
+    function onAdd(event) {
+        setJob({
+            title: "",
+            company: "",
+            location: "",
+            link: ""
+        });
+    }
+
     return (
         <div>
             <form className="job-form">

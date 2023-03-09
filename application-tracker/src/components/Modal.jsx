@@ -4,14 +4,7 @@ import Modal from "react-bootstrap/Modal";
 import Form from "./Form";
 
 function JobModal(props) {
-    function onAdd(event) {
-        setJob({
-            title: "",
-            company: "",
-            location: "",
-            link: ""
-        });
-    }
+    
 
     return (
     <Modal
@@ -29,7 +22,7 @@ function JobModal(props) {
             <Form />
         </Modal.Body>
         <Modal.Footer>
-            <Button variant="success" onClick={onAdd}>Add</Button>
+            <Button variant="success" onClick={props.onHide}>Add</Button>
             <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer>
     </Modal>
