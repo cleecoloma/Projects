@@ -1,10 +1,11 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "./Form";
 
 function JobModal(props) {
-  return (
+    
+
+    return (
     <Modal
         {...props}
         size="lg"
@@ -19,10 +20,6 @@ function JobModal(props) {
         <Modal.Body>
             <Form />
         </Modal.Body>
-        <Modal.Footer>
-            <Button variant="success" onClick={props.onHide}>Add</Button>
-            <Button onClick={props.onHide}>Close</Button>
-        </Modal.Footer>
     </Modal>
   );
 }

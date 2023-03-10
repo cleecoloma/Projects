@@ -1,21 +1,22 @@
 import React from "react";
 import Filter from "./Filter";
 import Button from "react-bootstrap/Button";
+import Form from "./Form"
 
-function Job() {
+function Job(props) {
     return (
         <section>
-            <Filter />
             <div className="job">
                 <div className="job-top">
-                    <p>Job Title</p>
+                    <p>{props.title}</p>
                     <Button variant="success">Apply</Button>
                 </div>
                 <div>
-                    <p>Company</p>
+                    <p>{props.company}</p>
+                    <p>{props.location}</p>
                 </div>
                 <div className="job-bottom">
-                    <Button variant="primary">Link</Button>
+                    <Button variant="primary">{props.link}</Button>
                     <div className="job-bottom-icons">
                         <p className="icons">Watchlist</p>
                         <p className="icons">Edit</p>
