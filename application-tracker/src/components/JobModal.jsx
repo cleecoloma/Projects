@@ -18,7 +18,7 @@ function JobModal(props) {
                 ...prevJob,
                 [name]: value
             }
-        })
+        });
     }
 
     function submitJob(event) {
@@ -29,9 +29,11 @@ function JobModal(props) {
             location: "",
             link: ""
         });
-        event.preventDefault();
+        event.preventDefault(); 
+        props.onHide();
     }
-    
+
+
     return (
     <Modal
         {...props}
