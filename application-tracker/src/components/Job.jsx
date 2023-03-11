@@ -1,7 +1,5 @@
 import React from "react";
-import Filter from "./Filter";
 import Button from "react-bootstrap/Button";
-import Form from "./Form"
 
 function Job(props) {
     return (

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Mode from "./Mode";
-import JobModal from "./Modal"
+import JobModal from "./JobModal"
 import Button from "react-bootstrap/Button";
 
-function Header() {
+function Header(props) {
     const [modalShow, setModalShow] = useState(false);
 
     return (
@@ -15,6 +15,7 @@ function Header() {
                         Add Job
                     </Button>
                     <JobModal
+                        onAdd={props.saveJob}
                         show={modalShow}
                         onHide={() => setModalShow(false)}
                     /> 

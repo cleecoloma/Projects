@@ -3,7 +3,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Job from "./Job";
 import Filter from "./Filter";
-import Form from "./Form";
 
 
 function App() {
@@ -25,14 +24,12 @@ function App() {
 
   return (
     <div>
-      <Header />
+      <Header saveJob={addJob} />
       <div className="content"> 
-        
         <Filter />
-        <Form onAdd={addJob} />
         {jobs.map((jobList, index) => {
           return (
-            <Job 
+            <Job
               key={index}
               id={index}
               title={jobList.title}

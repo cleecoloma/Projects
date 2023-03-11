@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
-import Job from "./Job";
 
-function Form(props) {
+function JobModal(props) {
     const [job, setJob] = useState({
         title: "",
         company: "",
@@ -31,9 +31,20 @@ function Form(props) {
         });
         event.preventDefault();
     }
-
+    
     return (
-        <div>
+    <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+    >
+        <Modal.Header closeButton>
+            <Modal.Title id="contained-modal-title-vcenter">
+                New Job
+            </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
             <form className="job-form">
                 <input onChange={handleChange} type="text" name="title" placeholder="Job Title" value={job.title} required/>
                 <input onChange={handleChange} type="text" name="company" placeholder="Company" value={job.company} required/>
@@ -43,8 +54,9 @@ function Form(props) {
             <div className="add-job-button">
                 <Button variant="success" onClick={submitJob}>Add</Button>
             </div> 
-        </div>
-    );
+        </Modal.Body>
+    </Modal>
+  );
 }
 
-export default Form;
+export default JobModal;
