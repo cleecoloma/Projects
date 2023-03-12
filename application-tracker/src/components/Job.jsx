@@ -27,15 +27,15 @@ function Job(props) {
         <section>
             <div className="job">
                 <div className="job-top">
-                    <p>{props.title}</p>
+                    <p><em>Title: </em>{props.title}</p>
                     <Switch {...props} />
                 </div>
                 <div>
-                    <p>{props.company}</p>
-                    <p>{props.location}</p>
+                    <p><em>Company: </em>{props.company}</p>
+                    <p><em>Location: </em>{props.location}</p>
                 </div>
                 <div className="job-bottom">
-                    <Button variant="outlined" href={props.link}> Link </Button>
+                    <Button variant="outlined" href={props.link}> Job Listing Link </Button>
                     <div className="job-bottom-icons">
                         <FavoriteIcon />
                         <EditIcon />
