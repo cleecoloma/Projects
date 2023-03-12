@@ -1,10 +1,10 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import EditIcon from '@mui/icons-material/Edit';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { styled } from "@mui/system";
 import Switch from "@mui/material/Switch";
+import Button from "@mui/material/Button";
 
 function Job(props) {
     function handleClick() {
@@ -35,11 +35,11 @@ function Job(props) {
                     <p>{props.location}</p>
                 </div>
                 <div className="job-bottom">
-                    <Button variant="primary">{props.link}</Button>
+                    <Button variant="outlined" href={props.link}> Link </Button>
                     <div className="job-bottom-icons">
                         <FavoriteIcon />
                         <EditIcon />
-                        <DeleteForeverIcon className={classes.useStyles} onClick={handleClick} />
+                        <DeleteForeverIcon className={classes.useStyle} onClick={handleClick} />
                     </div>
                 </div>
             </div>
