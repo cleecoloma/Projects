@@ -36,6 +36,7 @@ function App() {
               company={jobList.company}
               location={jobList.location}
               link={jobList.link}
+              removeJob={deleteJob}
             />
           );
         })}
