@@ -4,10 +4,10 @@ import Button from "react-bootstrap/Button";
 
 function EditModal(props) {
     const [job, setJob] = useState({
-        title: props.title,
-        company: props.company,
-        location: props.location,
-        link: props.link
+        title: "",
+        company: "",
+        location: "",
+        link: ""
     });
 
     function handleChange(event) {
@@ -22,7 +22,7 @@ function EditModal(props) {
     }
 
     function submitJob(event) {
-        props.editJob(job);
+        props.onAdd(job);
         setJob({
             title: "",
             company: "",
@@ -43,15 +43,15 @@ function EditModal(props) {
     >
         <Modal.Header closeButton>
             <Modal.Title id="contained-modal-title-vcenter">
-                New Job
+                Edit Job
             </Modal.Title>
         </Modal.Header>
         <Modal.Body>
             <form className="job-form">
-                <input type="text" name="title" placeholder="Job Title" required/>
-                <input type="text" name="company" placeholder="Company" required/>
-                <input type="text" name="location" placeholder="Location" required/>
-                <input type="text" name="link" placeholder="URL link" required/>
+                <input onChange={handleChange} type="text" name="title" placeholder="Job Title" value={job.title} required/>
+                <input onChange={handleChange} type="text" name="company" placeholder="Company" value={job.company} required/>
+                <input onChange={handleChange} type="text" name="location" placeholder="Location" value={job.location} required/>
+                <input onChange={handleChange} type="text" name="link" placeholder="URL link" value={job.link} required/>
             </form> 
             <div className="add-job-button">
                 <Button variant="success" onClick={submitJob}>Edit</Button>

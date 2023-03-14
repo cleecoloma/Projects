@@ -23,12 +23,6 @@ function App() {
     });
   }
 
-  function editJob(id, updatedJob) {
-    setJobs(prevJobs => {
-      return prevJobs.map((jobList => jobList.id === id ? updatedJob : jobList))
-    })
-  }
-
   return (
     <div>
       <Header saveJob={addJob} />
@@ -44,7 +38,7 @@ function App() {
               location={jobList.location}
               link={jobList.link}
               removeJob={deleteJob}
-              updateJob={editJob}
+              saveJob={addJob}
             />
           );
         })}

@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 import EditIcon from '@mui/icons-material/Edit';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { styled } from "@mui/system";
 import Switch from "@mui/material/Switch";
 import Button from "@mui/material/Button";
+import EditModal from "./JobModal";
+
 
 function Job(props) {
+    const [modalShow, setModalShow] = useState(false);
+
     function deleteClick() {
         props.removeJob(props.id)
     }
@@ -15,17 +18,6 @@ function Job(props) {
         props.editJob(props.id)
     }
 
-    const useStyles = styled (theme => (
-        {
-            clickableIcon: {
-                color: "green", "&:hover" : {
-                    color: "yellow",
-                },
-            },
-        } 
-    ));
-
-    const classes = useStyles();
 
     return (
         <section>
@@ -42,8 +34,13 @@ function Job(props) {
                     <Button variant="outlined" href={props.link}> Job Listing Link </Button>
                     <div className="job-bottom-icons">
                         <FavoriteIcon />
-                        <EditIcon onClick={editClick}/>
-                        <DeleteForeverIcon className={classes.useStyle} onClick={deleteClick} />
+                        <EditIcon onClick={() => setModalShow(true)}/>
+                        <EditModal
+                            onAdd={props.saveJob}
+                            show={modalShow}
+                            onHide={() => setModalShow(false)}
+                        /> 
+                        <DeleteForeverIcon onClick={deleteClick} />
                     </div>
                 </div>
             </div>
