@@ -14,11 +14,6 @@ function Job(props) {
         props.removeJob(props.id)
     }
 
-    function editClick() {
-        props.editJob(props.id)
-    }
-
-
     return (
         <section>
             <div className="job">
@@ -39,7 +34,7 @@ function Job(props) {
                             onAdd={props.saveJob}
                             show={modalShow}
                             onHide={() => setModalShow(false)}
-                        /> 
+                        />
                         <DeleteForeverIcon onClick={deleteClick} />
                     </div>
                 </div>

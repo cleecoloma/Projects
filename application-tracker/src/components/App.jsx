@@ -3,8 +3,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Job from "./Job";
 import Filter from "./Filter";
-import EditModal from "./EditModal";
-
 
 function App() {
   const [jobs, setJobs] = useState([]);
