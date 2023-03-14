@@ -7,8 +7,12 @@ import Switch from "@mui/material/Switch";
 import Button from "@mui/material/Button";
 
 function Job(props) {
-    function handleClick() {
+    function deleteClick() {
         props.removeJob(props.id)
+    }
+
+    function editClick() {
+        props.editJob(props.id)
     }
 
     const useStyles = styled (theme => (
@@ -38,8 +42,8 @@ function Job(props) {
                     <Button variant="outlined" href={props.link}> Job Listing Link </Button>
                     <div className="job-bottom-icons">
                         <FavoriteIcon />
-                        <EditIcon />
-                        <DeleteForeverIcon className={classes.useStyle} onClick={handleClick} />
+                        <EditIcon onClick={editClick}/>
+                        <DeleteForeverIcon className={classes.useStyle} onClick={deleteClick} />
                     </div>
                 </div>
             </div>

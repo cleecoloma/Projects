@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Job from "./Job";
 import Filter from "./Filter";
+import EditModal from "./EditModal";
 
 
 function App() {
@@ -22,6 +23,12 @@ function App() {
     });
   }
 
+  function editJob(id, updatedJob) {
+    setJobs(prevJobs => {
+      return prevJobs.map((jobList => jobList.id === id ? updatedJob : jobList))
+    })
+  }
+
   return (
     <div>
       <Header saveJob={addJob} />
@@ -37,6 +44,7 @@ function App() {
               location={jobList.location}
               link={jobList.link}
               removeJob={deleteJob}
+              updateJob={editJob}
             />
           );
         })}
