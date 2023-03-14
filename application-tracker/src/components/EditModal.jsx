@@ -43,7 +43,7 @@ function EditModal(props) {
     >
         <Modal.Header closeButton>
             <Modal.Title id="contained-modal-title-vcenter">
-                Edit Job
+                New Job
             </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -54,7 +54,7 @@ function EditModal(props) {
                 <input onChange={handleChange} type="text" name="link" placeholder="URL link" value={job.link} required/>
             </form> 
             <div className="add-job-button">
-                <Button variant="success" onClick={submitJob}>Edit</Button>
+                <Button variant="success" onClick={submitJob}>Add</Button>
             </div> 
         </Modal.Body>
     </Modal>
