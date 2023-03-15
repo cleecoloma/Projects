@@ -11,9 +11,6 @@ function Header(props) {
             <h1>Job Application Tracker</h1>
             <div className="header-buttons">
                 <div className="add-job-button">
-                    <Button variant="primary" onClick={() => setModalShow(true)}>
-                        Add Job
-                    </Button>
                     <JobModal
                         onAdd={props.saveJob}
                         show={modalShow}

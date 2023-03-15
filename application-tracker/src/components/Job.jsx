@@ -6,7 +6,6 @@ import Switch from "@mui/material/Switch";
 import Button from "@mui/material/Button";
 import EditModal from "./EditModal";
 
-
 function Job(props) {
     const [modalShow, setModalShow] = useState(false);
 
@@ -29,11 +28,7 @@ function Job(props) {
                     <Button variant="outlined" href={props.link}> Job Listing Link </Button>
                     <div className="job-bottom-icons">
                         <FavoriteIcon />
-                        <EditIcon onClick={() => setModalShow(true)}/>
-                            <EditModal
-                                onEdit={props.updateJob}
-                                onHide={() => setModalShow(false)}
-                            /> 
+                        <EditModal /> 
                         <DeleteForeverIcon onClick={deleteClick} />
                     </div>
                 </div>
