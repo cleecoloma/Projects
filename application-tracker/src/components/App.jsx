@@ -12,6 +12,12 @@ function App() {
       return [...prevJobs, newJob];
     });
   }
+
+  function editJob(updatedJob) {
+    setJobs(prevJobs => {
+      return [...prevJobs, updatedJob];
+    });
+  }
   
   function deleteJob(id) {
     setJobs(prevJobs => {
@@ -37,6 +43,7 @@ function App() {
               link={jobList.link}
               removeJob={deleteJob}
               saveJob={addJob}
+              updateJob={editJob}
             />
           );
         })}

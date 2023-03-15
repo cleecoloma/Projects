@@ -4,7 +4,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Switch from "@mui/material/Switch";
 import Button from "@mui/material/Button";
-import JobModal from "./JobModal";
+import EditModal from "./EditModal";
 
 
 function Job(props) {
@@ -30,8 +30,8 @@ function Job(props) {
                     <div className="job-bottom-icons">
                         <FavoriteIcon />
                         <EditIcon onClick={() => setModalShow(true)}/>
-                            <JobModal
-                                show={modalShow}
+                            <EditModal
+                                onEdit={props.updateJob}
                                 onHide={() => setModalShow(false)}
                             /> 
                         <DeleteForeverIcon onClick={deleteClick} />

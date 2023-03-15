@@ -4,10 +4,10 @@ import Button from "react-bootstrap/Button";
 
 function EditModal(props) {
     const [job, setJob] = useState({
-        title: "",
-        company: "",
-        location: "",
-        link: ""
+        title: "aaa",
+        company: "ddd",
+        location: "sss",
+        link: "ddd"
     });
 
     function handleChange(event) {
@@ -22,12 +22,12 @@ function EditModal(props) {
     }
 
     function submitJob(event) {
-        props.onAdd(job);
+        props.onEdit(job);
         setJob({
-            title: "",
-            company: "",
-            location: "",
-            link: ""
+            title: "ss",
+            company: "sss",
+            location: "ss",
+            link: "ssss"
         });
         event.preventDefault(); 
         props.onHide();
@@ -43,7 +43,7 @@ function EditModal(props) {
     >
         <Modal.Header closeButton>
             <Modal.Title id="contained-modal-title-vcenter">
-                New Job
+                Edit Job
             </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -54,7 +54,7 @@ function EditModal(props) {
                 <input onChange={handleChange} type="text" name="link" placeholder="URL link" value={job.link} required/>
             </form> 
             <div className="add-job-button">
-                <Button variant="success" onClick={submitJob}>Add</Button>
+                <Button variant="success" onClick={submitJob}>Save Changes</Button>
             </div> 
         </Modal.Body>
     </Modal>
