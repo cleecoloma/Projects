@@ -4,10 +4,10 @@ import Button from "react-bootstrap/Button";
 
 function EditModal(props) {
     const [job, setJob] = useState({
-        title: "aaa",
-        company: "ddd",
-        location: "sss",
-        link: "ddd"
+        title: props.updatedJob.title,
+        company: props.updatedJob.company,
+        location: props.updatedJob.location,
+        link: props.updatedJob.link
     });
 
     function handleChange(event) {
@@ -15,7 +15,6 @@ function EditModal(props) {
 
         setJob(prevJob => {
             return {
-                ...prevJob,
                 [name]: value
             }
         });
@@ -24,10 +23,10 @@ function EditModal(props) {
     function submitJob(event) {
         props.onEdit(job);
         setJob({
-            title: "ss",
-            company: "sss",
-            location: "ss",
-            link: "ssss"
+            title: "",
+            company: "",
+            location: "",
+            link: ""
         });
         event.preventDefault(); 
         props.onHide();
@@ -48,9 +47,9 @@ function EditModal(props) {
         </Modal.Header>
         <Modal.Body>
             <form className="job-form">
-                <input onChange={handleChange} type="text" name="title" placeholder="Job Title" value={job.title} required/>
-                <input onChange={handleChange} type="text" name="company" placeholder="Company" value={job.company} required/>
-                <input onChange={handleChange} type="text" name="location" placeholder="Location" value={job.location} required/>
+                <input onChange={handleChange} type="text" name="title" placeholder={props.updatedJob.title} value={props.updatedJob.title} required/>
+                <input onChange={handleChange} type="text" name="company" placeholder={job.company}  value={job.company} required/>
+                <input onChange={handleChange} type="text" name="location" placeholder="Loss" value={job.location} required/>
                 <input onChange={handleChange} type="text" name="link" placeholder="URL link" value={job.link} required/>
             </form> 
             <div className="add-job-button">

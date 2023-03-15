@@ -15,7 +15,9 @@ function App() {
 
   function editJob(updatedJob) {
     setJobs(prevJobs => {
-      return [...prevJobs, updatedJob];
+      return prevJobs.filter((jobList, index) => {
+        return updatedJob = jobs[index];
+      });
     });
   }
   
