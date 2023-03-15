@@ -13,6 +13,10 @@ function Job(props) {
         props.removeJob(props.id)
     }
 
+    function editClick() {
+        props.updateJob(props.id)
+    }
+
     return (
         <section>
             <div className="job">
@@ -28,7 +32,13 @@ function Job(props) {
                     <Button variant="outlined" href={props.link}> Job Listing Link </Button>
                     <div className="job-bottom-icons">
                         <FavoriteIcon />
-                        <EditModal /> 
+                        <EditModal 
+                            onClick={editClick}
+                            changeTitle={props.title}
+                            changeCompany={props.company}
+                            changeLocation={props.location}
+                            changeLink={props.link}
+                        /> 
                         <DeleteForeverIcon onClick={deleteClick} />
                     </div>
                 </div>

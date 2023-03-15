@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Job from "./Job";
 import Filter from "./Filter";
+import EditModal from "./EditModal";
 
 function App() {
   const [jobs, setJobs] = useState([]);
@@ -13,10 +14,10 @@ function App() {
     });
   }
 
-  function editJob(updatedJob) {
+  function editJob(id) {
     setJobs(prevJobs => {
       return prevJobs.filter((jobList, index) => {
-        return updatedJob = jobs[index];
+        return index === id;
       });
     });
   }
