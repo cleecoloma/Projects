@@ -13,12 +13,6 @@ function App() {
     });
   }
 
-  // function addEditedJob(newJob) {
-  //   setJobs(prevJobs => {
-  //     return [...prevJobs, newJob];
-  //   });
-  // }
-
   function addEditedJob(editedJob) {
     setJobs(jobs.map((jobList) => {
       if (jobList.id === editedJob.id) {

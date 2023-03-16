@@ -9,11 +9,6 @@ function EditModal(props) {
     const handleShow = () => setShow(true);
 
     const [job, setJob] = useState({
-        // title: "",
-        // company: "",
-        // location: "",
-        // link: ""
-        // id: props.changeId,
         title: props.changeTitle,
         company: props.changeCompany,
         location: props.changeLocation,
@@ -33,12 +28,6 @@ function handleChange(event) {
 
 function submitJob(event) {
     props.onEdit(job);
-    setJob({
-        title: "",
-        company: "",
-        location: "",
-        link: ""
-    });
     event.preventDefault(); 
 }
 
