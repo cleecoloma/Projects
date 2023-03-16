@@ -38,7 +38,7 @@ function Job(props) {
                             changeCompany={props.company}
                             changeLocation={props.location}
                             changeLink={props.link}
-                            onEditAdd={props.saveEditedJob}
+                            onEdit={props.saveEdit}
                         /> 
                         <DeleteForeverIcon onClick={deleteClick} />
                     </div>

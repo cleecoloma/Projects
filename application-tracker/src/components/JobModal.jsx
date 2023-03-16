@@ -49,7 +49,7 @@ function submitJob(event) {
             </Modal.Header>
             <Modal.Body>
             <Form>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                     <Form.Control
                     onChange={handleChange}
                     name="title"

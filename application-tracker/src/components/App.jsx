@@ -3,7 +3,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Job from "./Job";
 import Filter from "./Filter";
-import { ListItem } from "@mui/material";
 
 function App() {
   const [jobs, setJobs] = useState([]);
@@ -14,23 +13,21 @@ function App() {
     });
   }
 
-  function addEditedJob(newJob) {
-    setJobs(prevJobs => {
-      return prevJobs.map((jobList, index) => {
-        if (prevJobs.id === newJob.id ) {
-          return {...prevJobs, newJob}
-        } else {
-          return {prevJobs}
-        }
-      });
-    });
-  }
-
   // function addEditedJob(newJob) {
   //   setJobs(prevJobs => {
   //     return [...prevJobs, newJob];
   //   });
   // }
+
+  function addEditedJob(editedJob) {
+    setJobs(jobs.map((jobList) => {
+      if (jobList.id === editedJob.id) {
+        return jobList = editedJob;
+      } else {
+        return jobList;
+      }
+    }))
+  }
 
   function editJob(id) {
     setJobs(prevJobs => {
@@ -65,7 +62,7 @@ function App() {
               removeJob={deleteJob}
               saveJob={addJob}
               updateJob={editJob}
-              saveEditedJob={addEditedJob}
+              saveEdit={addEditedJob}
             />
           );
         })}

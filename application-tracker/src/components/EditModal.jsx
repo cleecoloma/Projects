@@ -9,7 +9,11 @@ function EditModal(props) {
     const handleShow = () => setShow(true);
 
     const [job, setJob] = useState({
-        id: props.changeId,
+        // title: "",
+        // company: "",
+        // location: "",
+        // link: ""
+        // id: props.changeId,
         title: props.changeTitle,
         company: props.changeCompany,
         location: props.changeLocation,
@@ -28,7 +32,7 @@ function handleChange(event) {
 }
 
 function submitJob(event) {
-    props.onEditAdd(job);
+    props.onEdit(job);
     setJob({
         title: "",
         company: "",
@@ -50,12 +54,12 @@ function submitJob(event) {
             </Modal.Header>
             <Modal.Body>
             <Form>
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                <Form.Control
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                    <Form.Control
                     onChange={handleChange}
                     name="title"
                     type="text"
-                    placeholder="Job Title"
+                    placeholder="title"
                     value={job.title}
                     autoFocus
                 />
@@ -65,7 +69,7 @@ function submitJob(event) {
                     onChange={handleChange}
                     name="company"
                     type="text"
-                    placeholder="Company"
+                    placeholder="company"
                     value={job.company}
                     autoFocus
                 />
@@ -75,7 +79,7 @@ function submitJob(event) {
                     onChange={handleChange}
                     name="location"
                     type="text"
-                    placeholder="Location"
+                    placeholder="location"
                     value={job.location}
                     autoFocus
                 />
@@ -85,7 +89,7 @@ function submitJob(event) {
                     onChange={handleChange}
                     name="link"
                     type="text"
-                    placeholder="Link"
+                    placeholder="link"
                     value={job.link}
                     autoFocus
                 />
