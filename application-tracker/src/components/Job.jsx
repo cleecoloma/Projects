@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
-import EditIcon from '@mui/icons-material/Edit';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Switch from "@mui/material/Switch";
 import Button from "@mui/material/Button";
@@ -34,10 +33,12 @@ function Job(props) {
                         <FavoriteIcon />
                         <EditModal 
                             onClick={editClick}
+                            changeId={props.id}
                             changeTitle={props.title}
                             changeCompany={props.company}
                             changeLocation={props.location}
                             changeLink={props.link}
+                            onEditAdd={props.saveEditedJob}
                         /> 
                         <DeleteForeverIcon onClick={deleteClick} />
                     </div>

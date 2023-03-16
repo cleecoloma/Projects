@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Mode from "./Mode";
 import JobModal from "./JobModal"
-import Button from "react-bootstrap/Button";
 
 function Header(props) {
     const [modalShow, setModalShow] = useState(false);
