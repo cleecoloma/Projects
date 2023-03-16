@@ -14,8 +14,8 @@ function App() {
   }
 
   function addEditedJob(editedJob) {
-    setJobs(jobs.map((jobList) => {
-      if (jobList.id === editedJob.id) {
+    setJobs(jobs.map((jobList, index) => {
+      if (index === editedJob.id) {
         return jobList = editedJob;
       } else {
         return jobList;
