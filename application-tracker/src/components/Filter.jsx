@@ -1,14 +1,16 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
+import  { Button } from "@mui/material";
+import { ButtonGroup } from "@mui/material";
 
 function Filter() {
     return (
-        <div className="filter">
-            <Button variant="primary">All</Button>
-            <Button variant="primary">Watchlist</Button>
-            <Button variant="primary">Open</Button>
-            <Button variant="primary">Closed</Button>
-        </div>
+        <ButtonGroup className="filter" variant="contained" aria-label="outlined primary button group">
+            <Button>All</Button>
+            <Button>Watchlist</Button>
+            <Button>Open</Button>
+            <Button>Closed</Button>
+        </ButtonGroup>
     );
 }
 
