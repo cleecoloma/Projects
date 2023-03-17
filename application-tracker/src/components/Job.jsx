@@ -4,6 +4,9 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import Switch from "@mui/material/Switch";
 import Button from "@mui/material/Button";
 import EditModal from "./EditModal";
+import ButtonGroup from '@mui/material/ButtonGroup';
+import Box from '@mui/material/Box';
+
 
 function Job(props) {
     const [modalShow, setModalShow] = useState(false);
@@ -30,7 +33,22 @@ function Job(props) {
                 <div className="job-bottom">
                     <Button variant="outlined" href={props.link}> Job Listing Link </Button>
                     <div className="job-bottom-icons">
-                        <FavoriteIcon />
+                    <ButtonGroup variant="text" aria-label="text button group">
+                        <Button><FavoriteIcon /></Button>
+                        <Button>
+                            <EditModal 
+                                onClick={editClick}
+                                changeId={props.id}
+                                changeTitle={props.title}
+                                changeCompany={props.company}
+                                changeLocation={props.location}
+                                changeLink={props.link}
+                                onEdit={props.saveEdit}
+                            />
+                        </Button>
+                        <Button><DeleteForeverIcon onClick={deleteClick} /></Button>
+                    </ButtonGroup>
+                        {/* <FavoriteIcon />
                         <EditModal 
                             onClick={editClick}
                             changeId={props.id}
@@ -40,7 +58,7 @@ function Job(props) {
                             changeLink={props.link}
                             onEdit={props.saveEdit}
                         /> 
-                        <DeleteForeverIcon onClick={deleteClick} />
+                        <DeleteForeverIcon onClick={deleteClick} /> */}
                     </div>
                 </div>
             </div>
