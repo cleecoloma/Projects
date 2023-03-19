@@ -5,8 +5,6 @@ import Switch from "@mui/material/Switch";
 import Button from "@mui/material/Button";
 import EditModal from "./EditModal";
 import ButtonGroup from '@mui/material/ButtonGroup';
-import Box from '@mui/material/Box';
-
 
 function Job(props) {
     const [modalShow, setModalShow] = useState(false);
@@ -48,17 +46,6 @@ function Job(props) {
                         </Button>
                         <Button><DeleteForeverIcon onClick={deleteClick} /></Button>
                     </ButtonGroup>
-                        {/* <FavoriteIcon />
-                        <EditModal 
-                            onClick={editClick}
-                            changeId={props.id}
-                            changeTitle={props.title}
-                            changeCompany={props.company}
-                            changeLocation={props.location}
-                            changeLink={props.link}
-                            onEdit={props.saveEdit}
-                        /> 
-                        <DeleteForeverIcon onClick={deleteClick} /> */}
                     </div>
                 </div>
             </div>

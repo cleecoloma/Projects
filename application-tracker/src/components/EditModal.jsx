@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
+import Button from "@mui/material/Button";
 import Form from 'react-bootstrap/Form';
+import EditIcon from '@mui/icons-material/Edit';
 
 function EditModal(props) {
     const [show, setShow] = useState(false);
@@ -34,9 +35,7 @@ function submitJob(event) {
 
   return (
     <>
-        <Button variant="primary" onClick={handleShow}>
-            Edit
-        </Button>
+        <EditIcon color="primary" onClick={handleShow}/>
 
         <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>
@@ -78,7 +77,7 @@ function submitJob(event) {
                 <Form.Control
                     onChange={handleChange}
                     name="link"
-                    type="text"
+                    type="url"
                     placeholder="link"
                     value={job.link}
                     autoFocus
