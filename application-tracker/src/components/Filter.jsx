@@ -9,7 +9,7 @@ function Filter() {
             <Button>All</Button>
             <Button>Watchlist</Button>
             <Button>Open</Button>
-            <Button>Closed</Button>
+            <Button>Applied</Button>
         </ButtonGroup>
     );
 }
