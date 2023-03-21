@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Mode from "./Mode";
 import JobModal from "./JobModal"
 
 function Header(props) {
@@ -15,9 +14,6 @@ function Header(props) {
                         show={modalShow}
                         onHide={() => setModalShow(false)}
                     /> 
-                </div>
-                <div className="view-mode">
-                    <Mode />
                 </div>
             </div>
         </header>
