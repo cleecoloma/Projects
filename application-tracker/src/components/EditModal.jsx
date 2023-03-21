@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import Button from "@mui/material/Button";
+import Button from "react-bootstrap/Button";
 import Form from 'react-bootstrap/Form';
 import EditIcon from '@mui/icons-material/Edit';
 
@@ -60,7 +60,6 @@ function submitJob(event) {
                     type="text"
                     placeholder="company"
                     value={job.company}
-                    autoFocus
                 />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -70,7 +69,6 @@ function submitJob(event) {
                     type="text"
                     placeholder="location"
                     value={job.location}
-                    autoFocus
                 />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -80,7 +78,6 @@ function submitJob(event) {
                     type="url"
                     placeholder="link"
                     value={job.link}
-                    autoFocus
                 />
             </Form.Group>
           </Form>

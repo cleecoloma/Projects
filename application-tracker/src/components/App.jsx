@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Job from "./Job";
-import Filter from "./Filter";
 
 function App() {
   const [jobs, setJobs] = useState([]);
@@ -43,7 +42,6 @@ function App() {
     <div>
       <Header saveJob={addJob} />
       <div className="content"> 
-        <Filter />
         {jobs.map((jobList, index) => {
           return (
             <Job

@@ -66,7 +66,6 @@ function submitJob(event) {
                     type="text"
                     placeholder="Company"
                     value={job.company}
-                    autoFocus
                 />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -76,7 +75,6 @@ function submitJob(event) {
                     type="text"
                     placeholder="Location"
                     value={job.location}
-                    autoFocus
                 />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -85,8 +83,7 @@ function submitJob(event) {
                     name="link"
                     type="text"
                     placeholder="Link"
-                    value={job.link}
-                    autoFocus
+                    value={job.link}           
                 />
             </Form.Group>
         </Form>
