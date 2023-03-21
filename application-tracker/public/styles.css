@@ -28,11 +28,6 @@ header div {
     margin: 10px;
 }
 
-.view-mode {
-    margin: 10px;;
-}
-
-
 #footer {
     position: fixed;
     background-color:blanchedalmond;
@@ -47,25 +42,26 @@ header div {
     padding-bottom: 2.5rem;
     min-height: 100%;
     margin-top: 5rem;
+    max-width: 275px;
 }
 
 .job {
-    background-color: aquamarine;
-    border-radius: 7px;
-    position: relative;
-    margin: 0px 20px 30px;
-    padding: 10px;
+    max-width: 275px;
+    margin-top: 1rem;
 }
 
 .job-top {
-    display: flex;
-    justify-content: space-between;
+    float: right;
+}
+
+.job-content {
+    margin-top: 2rem;
 }
 
 .job-bottom {
     display: flex;
     justify-content: space-between;
-}
+} 
 
 .job-bottom-icons {
     display: flex;
@@ -76,14 +72,10 @@ header div {
     padding-left: 20px;
 }
 
-.filter {
-    position: relative;
-    margin: 100px 10px 0px;
-}
-
 .add-job-button {
     display: flex;
     justify-content: center;
+    margin: 10px;
 }
 
 form input {

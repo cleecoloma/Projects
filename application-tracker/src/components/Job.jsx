@@ -4,6 +4,10 @@ import Checkbox from '@mui/material/Checkbox';
 import Button from "@mui/material/Button";
 import EditModal from "./EditModal";
 import ButtonGroup from '@mui/material/ButtonGroup';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 
 function Job(props) {
     const [modalShow, setModalShow] = useState(false);
@@ -17,19 +21,28 @@ function Job(props) {
     }
 
     return (
-        <section>
-            <div className="job">
+        <div className="job">
+            <Card sx={{ minWidth: 275 }} variant="outlined">
+            <CardContent>
                 <div className="job-top">
-                    <p><em>Title: </em>{props.title}</p>
-                    <Checkbox />
+                    
+                    <Checkbox size="small"/>
                 </div>
-                <div>
-                    <p><em>Company: </em>{props.company}</p>
-                    <p><em>Location: </em>{props.location}</p>
+                <div className="job-content">
+                    <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                            {props.title}
+                        </Typography>
+                    <Typography variant="h5" component="div">
+                        {props.company}
+                    </Typography>
+                    <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                        {props.location}
+                    </Typography>
                 </div>
-                <div className="job-bottom">
-                    <Button variant="outlined" href={props.link}> Job Listing Link </Button>
-                    <div className="job-bottom-icons">
+            </CardContent>
+            <CardActions className="job-bottom">
+                <Button variant="outlined" href={props.link}> Link </Button>
+                <div className="job-bottom-icons">
                     <ButtonGroup variant="text" aria-label="text button group">
                         <Button>
                             <EditModal 
@@ -44,10 +57,10 @@ function Job(props) {
                         </Button>
                         <Button><DeleteForeverIcon onClick={deleteClick} /></Button>
                     </ButtonGroup>
-                    </div>
                 </div>
-            </div>
-        </section>
+            </CardActions>
+        </Card>              
+        </div>
     );
 }
 
