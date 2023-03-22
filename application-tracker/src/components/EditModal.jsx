@@ -48,7 +48,7 @@ function submitJob(event) {
                     onChange={handleChange}
                     name="title"
                     type="text"
-                    placeholder="title"
+                    placeholder="Title"
                     value={job.title}
                     autoFocus
                 />
@@ -58,7 +58,7 @@ function submitJob(event) {
                     onChange={handleChange}
                     name="company"
                     type="text"
-                    placeholder="company"
+                    placeholder="Company"
                     value={job.company}
                 />
             </Form.Group>
@@ -67,7 +67,7 @@ function submitJob(event) {
                     onChange={handleChange}
                     name="location"
                     type="text"
-                    placeholder="location"
+                    placeholder="Location"
                     value={job.location}
                 />
             </Form.Group>
@@ -76,7 +76,7 @@ function submitJob(event) {
                     onChange={handleChange}
                     name="link"
                     type="url"
-                    placeholder="link"
+                    placeholder="Link"
                     value={job.link}
                 />
             </Form.Group>

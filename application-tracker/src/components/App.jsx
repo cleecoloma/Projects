@@ -39,7 +39,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="page">
       <Header saveJob={addJob} />
       <div className="content"> 
         {jobs.map((jobList, index) => {

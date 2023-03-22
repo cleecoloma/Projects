@@ -5,9 +5,8 @@ function Header(props) {
     const [modalShow, setModalShow] = useState(false);
 
     return (
-        <header>
+        <header className="navbar">
             <h1>Job Application Tracker</h1>
-            <div className="header-buttons">
                 <div className="add-job-button">
                     <JobModal
                         onAdd={props.saveJob}
@@ -15,7 +14,6 @@ function Header(props) {
                         onHide={() => setModalShow(false)}
                     /> 
                 </div>
-            </div>
         </header>
     )
 }

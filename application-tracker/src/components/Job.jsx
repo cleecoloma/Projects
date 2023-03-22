@@ -25,7 +25,6 @@ function Job(props) {
             <Card sx={{ minWidth: 275 }} variant="outlined">
             <CardContent>
                 <div className="job-top">
-                    
                     <Checkbox size="small"/>
                 </div>
                 <div className="job-content">
