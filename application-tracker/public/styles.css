@@ -1,23 +1,22 @@
 * {
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-.page {
-    width: 80%;
-    margin: auto;
+.container {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .content {
-    background-color: #FFB84C;
-    width: 80%;
-    z-index: 11111;
 }
-
 
 .navbar{
     background-color: #3A98B9;
-    font-family: 'Roboto', sans-serif;
 }
 
 .navbar h1 {
@@ -58,7 +57,7 @@ footer p {
 }
 
 .job {
-    max-width: 275px;
+    width: 19.25rem;
     float: left;
     color: #FFF1DC;
     margin-top: 1rem;
