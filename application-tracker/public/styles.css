@@ -35,16 +35,18 @@
 
 footer {
     display: flex;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     justify-content: center;
+    background-color: #3A98B9;
 }
 
 .job {
     color: #FFF1DC;
     margin-top: 1rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .job-top {
