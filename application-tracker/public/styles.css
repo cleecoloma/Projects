@@ -13,6 +13,9 @@
 }
 
 .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .navbar{
@@ -26,42 +29,22 @@
     color: #FFF2F2;
 }
 
-header div {
-    background-color: #3A98B9;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
 .add-job-button {
-    margin: 10px;
     margin-right: 10px;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    background-color:#E8D5C4;
-    text-align: center;
-    width: 80%;
-    height: 3rem;
-    margin: auto;
-}
-
-footer p {
-    background-color:#E8D5C4;
-    margin: 0;
+    display: flex;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
 }
 
 .job {
-    width: 19.25rem;
-    float: left;
     color: #FFF1DC;
     margin-top: 1rem;
-    margin-right: 1rem;
 }
 
 .job-top {
@@ -77,20 +60,20 @@ footer p {
     justify-content: space-between;
 } 
 
-.job-bottom-icons {
+/* .job-bottom-icons {
     display: flex;
     justify-content: space-between;
-}
+} */
 
-.icons {
+/* .icons {
     padding-left: 20px;
-}
+} */
 
-.add-job-button {
+/* .add-job-button {
     display: flex;
     justify-content: center;
     margin: 10px;
-}
+} */
 
 form input {
     display: inline-block;
