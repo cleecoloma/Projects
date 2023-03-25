@@ -9,10 +9,10 @@ function JobModal(props) {
     const handleShow = () => setShow(true);
 
     const [job, setJob] = useState({
-        title: "",
-        company: "",
-        location: "",
-        link: ""
+        title: "Software Engineer",
+        company: "Microsoft",
+        location: "Redmond, WA",
+        link: "microsoft.com"
 });
 
 function handleChange(event) {
