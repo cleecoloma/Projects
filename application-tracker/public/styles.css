@@ -4,6 +4,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
+header {
+    display: flex;
+    position: fixed;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .container {
     max-width: 1000px;
     margin-right: auto;
@@ -16,6 +23,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .navbar{
@@ -41,6 +50,8 @@ footer {
     right: 0;
     justify-content: center;
     background-color: #3A98B9;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .job {
@@ -60,29 +71,4 @@ footer {
 .job-bottom {
     display: flex;
     justify-content: space-between;
-} 
-
-/* .job-bottom-icons {
-    display: flex;
-    justify-content: space-between;
-} */
-
-/* .icons {
-    padding-left: 20px;
-} */
-
-/* .add-job-button {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-} */
-
-form input {
-    display: inline-block;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
-
