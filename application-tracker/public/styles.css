@@ -4,40 +4,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    display: flex;
+.navbar {
     position: fixed;
+    top: 0;
     margin-left: 10%;
     margin-right: 10%;
-}
-
-.table-header {
-    display: flex;
-    position: fixed;
-    left: 0;
-    right: 0;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.container {
-    max-width: 1000px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 3.6rem;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.navbar{
     background-color: #3A98B9;
 }
 
@@ -46,6 +17,23 @@ header {
     font-weight: 700;
     margin: 10px;
     color: #FFF2F2;
+}
+
+.table-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-decoration: underline;
+    font-weight: 400;
+    z-index: 50;
+}
+
+.content {
+    margin-top: 3.6rem;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .add-job-button {
@@ -68,17 +56,4 @@ footer {
     color: #FFF1DC;
     margin-top: 1rem;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-}
-
-.job-top {
-    float: right;
-}
-
-.job-content {
-    margin-top: 2rem;
-}
-
-.job-bottom {
-    display: flex;
-    justify-content: space-between;
 }

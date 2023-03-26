@@ -6,7 +6,7 @@ function Header(props) {
 
     return (
         <header className="navbar">
-        <h1>Job Application Tracker</h1>
+            <h1>Job Application Tracker</h1>
             <div className="add-job-button">
                 <JobModal
                     onAdd={props.saveJob}
