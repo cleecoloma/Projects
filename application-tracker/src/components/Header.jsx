@@ -5,7 +5,7 @@ function Header(props) {
     const [modalShow, setModalShow] = useState(false);
 
     return (
-        <header className="navbar">
+        <header>
             <h1>Job Application Tracker</h1>
             <div className="add-job-button">
                 <JobModal
