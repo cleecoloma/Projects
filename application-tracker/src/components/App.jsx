@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Job from "./Job";
+import TableHeader from "./TableHeader";
 
 function App() {
   const [jobs, setJobs] = useState([]);
@@ -41,6 +42,7 @@ function App() {
   return (
     <div>
       <Header saveJob={addJob} />
+      <TableHeader />
       <div className="content"> 
         {jobs.map((jobList, index) => {
           return (
