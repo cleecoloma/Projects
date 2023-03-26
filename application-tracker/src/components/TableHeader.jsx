@@ -13,11 +13,12 @@ function TableHeader() {
                 <Table aria-label="simple table">
                     <TableHead>
                         <TableRow>
-                            <TableCell>ID</TableCell>
-                            <TableCell align="center">Job Title</TableCell>
-                            <TableCell align="center">Company</TableCell>
-                            <TableCell align="center">Location</TableCell>
-                            <TableCell align="center">Link</TableCell>
+                            <TableCell style={{width: 80}} align="center">ID</TableCell>
+                            <TableCell style={{width: 320}} align="center">Job Title</TableCell>
+                            <TableCell style={{width: 180}} align="center">Company</TableCell>
+                            <TableCell style={{width: 180}} align="center" style={{width: 180}} >Location</TableCell>
+                            <TableCell style={{width: 180}} align="center">Link</TableCell>
+                            <TableCell align="center"></TableCell>
                         </TableRow>
                     </TableHead>
                 </Table>
