@@ -9,6 +9,7 @@ import Button from "@mui/material/Button";
 import EditModal from "./EditModal";
 import ButtonGroup from '@mui/material/ButtonGroup';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import Checkbox from '@mui/material/Checkbox';
 
 function Job(props) {
     const [modalShow, setModalShow] = useState(false);
@@ -29,12 +30,13 @@ function Job(props) {
                     key={props.title}
                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
+                    <TableCell style={{width: "7%"}} align="center"><Checkbox /></TableCell>
                     <TableCell style={{width: "5%"}} align="center" component="th" scope="row">{props.id}</TableCell>
                     <TableCell style={{width: "25%"}} align="center">{props.title}</TableCell>
                     <TableCell style={{width: "20%"}} align="center">{props.company}</TableCell>
                     <TableCell style={{width: "20%"}} align="center">{props.location}</TableCell>
-                    <TableCell style={{width: "15%"}} align="center">{props.link}</TableCell>
-                    <TableCell style={{width: "15%"}} align="center">
+                    <TableCell style={{width: "13%"}} align="center">{props.link}</TableCell>
+                    <TableCell style={{width: "10%"}} align="center">
                     <ButtonGroup variant="text" aria-label="text button group">
                         <Button>
                             <EditModal 

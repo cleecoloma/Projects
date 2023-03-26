@@ -41,8 +41,10 @@ function App() {
 
     return (
         <div>
-            <Header saveJob={addJob} />
-            <TableHeader />
+            <div>
+                <Header saveJob={addJob} />
+                <TableHeader />
+            </div>
             <div className="content"> 
                 {jobs.map((jobList, index) => {
                     return (
@@ -59,7 +61,7 @@ function App() {
                             saveEdit={addEditedJob}
                         />
                     );
-                })};
+                })}
             </div>
             <Footer />
         </div>
