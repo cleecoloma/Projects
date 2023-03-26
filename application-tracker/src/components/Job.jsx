@@ -31,7 +31,7 @@ function Job(props) {
                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
                     <TableCell style={{width: "7%"}} align="center"><Checkbox /></TableCell>
-                    <TableCell style={{width: "5%"}} align="center" component="th" scope="row">{props.id}</TableCell>
+                    <TableCell style={{width: "5%"}} align="center" component="th" scope="row">{props.id + 1}</TableCell>
                     <TableCell style={{width: "25%"}} align="center">{props.title}</TableCell>
                     <TableCell style={{width: "20%"}} align="center">{props.company}</TableCell>
                     <TableCell style={{width: "20%"}} align="center">{props.location}</TableCell>
