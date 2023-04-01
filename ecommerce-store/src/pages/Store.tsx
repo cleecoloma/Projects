@@ -31,7 +31,7 @@ function Store() {
       {data.map((product) => (
         <Card
           className="card-item m-2"
-          style={{ width: "20em", position: "relative" }}
+          style={{ width: "16em", position: "relative" }}
         >
           <Card.Img
             style={{ height: "20rem" }}
