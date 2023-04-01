@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Card } from "react-bootstrap";
 import axios from "axios";
+import Pdescription from "../components/Pdescription";
+
 
 function Store() {
   const [loading, setLoading] = useState(false);
@@ -32,7 +34,7 @@ function Store() {
           <Card.Body>
             <Card.Title>{product.title}</Card.Title>
             <Card.Text>
-              <Pdescription />
+              <Pdescription description={product.description} />
             </Card.Text>
             <Card.Text>{product.price}</Card.Text>
           </Card.Body>
