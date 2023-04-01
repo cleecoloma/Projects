@@ -11,16 +11,16 @@ function App() {
   return (
     <>
       <Navbar />
-      <Container className="mb-4 item-list container">
+      <Container>
         <Routes>
-          <Route path="/" element={<Home /> }></Route>
-          <Route path="/store" element={<Store /> }></Route>
-          <Route path="/about" element={<About /> }></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/store" element={<Store />}></Route>
+          <Route path="/about" element={<About />}></Route>
         </Routes>
       </Container>
       <Footer />
     </>
-  )
+  );
 }
 
 export default App

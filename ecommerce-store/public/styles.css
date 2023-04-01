@@ -9,5 +9,9 @@ footer {
 }
 
 .item-list {
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 10px;
 }
