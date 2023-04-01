@@ -7,3 +7,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+.item-list {
+  display: flex;
+}

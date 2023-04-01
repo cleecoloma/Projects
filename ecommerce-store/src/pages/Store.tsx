@@ -29,14 +29,18 @@ function Store() {
         </div>
       )}
       {data.map((product) => (
-        <Card className="card-item" style={{ width: "16em" }}>
-          <Card.Img variant="top" src={product.image} />
-          <Card.Body>
+        <Card className="card-item m-2" style={{ width: "20em", position:"relative" }}>
+          <Card.Img
+            style={{ height: "20rem" }}
+            variant="top"
+            src={product.image}
+          />
+          <Card.Body style={{ height: "20rem" }}>
             <Card.Title>{product.title}</Card.Title>
-            <Card.Text>
+            <Card.Text >
               <Pdescription description={product.description} />
             </Card.Text>
-            <Card.Text>{product.price}</Card.Text>
+            <Card.Text style={{bottom:"0.5rem", position:"absolute"}}>{product.price}</Card.Text>
           </Card.Body>
         </Card>
       ))}
