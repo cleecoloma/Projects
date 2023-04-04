@@ -11,6 +11,19 @@ footer {
 .item-list {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
+
+/* .pricing {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 1rem;
+}
+
+.add-cart {
+  position: inherit;
+  right: 1rem;
+} */
