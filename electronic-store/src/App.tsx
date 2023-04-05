@@ -1,14 +1,14 @@
-import { Route, Routes } from "react-router-dom"
-import { Container } from "react-bootstrap"
+import { Route, Routes } from "react-router-dom";
+import { Container } from "react-bootstrap";
 import Home from "./pages/Home";
 import Store from "./pages/Store";
 import About from "./pages/About";
-import Navbar from "./pages/Navbar";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Container className="mb-4">
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/store" element={<Store />} />
@@ -18,4 +18,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
