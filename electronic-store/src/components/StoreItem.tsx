@@ -1,6 +1,6 @@
 import { Card, Button } from "react-bootstrap";
 import formatCurrency from "../utilities/formatCurrency";
-import { useShoppingCart } from "../context/ShoppingCartContent";
+import { useShoppingBag } from "../context/ShoppingBagContent";
 
 type StoreItemProps = {
   id: number;
@@ -10,7 +10,12 @@ type StoreItemProps = {
 };
 
 function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
-  const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart } = useShoppingCart();
+  const {
+    getItemQuantity,
+    increaseBagQuantity,
+    decreaseBagQuantity,
+    removeFromBag,
+  } = useShoppingBag();
   const quantity = getItemQuantity(id);
   return (
     <Card className="h-100">
@@ -27,8 +32,8 @@ function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
         </Card.Title>
         <div className="mt-auto">
           {quantity === 0 ? (
-            <Button className="w-100" onClick={() => increaseCartQuantity(id)}>
-              + Add to Cart
+            <Button className="w-100" onClick={() => increaseBagQuantity(id)}>
+              + Add to Bag
             </Button>
           ) : (
             <div
@@ -39,17 +44,17 @@ function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
                 className="d-flex align-items-cente justify-content-center"
                 style={{ gap: "0.5rem" }}
               >
-                <Button onClick={() => decreaseCartQuantity(id)}>-</Button>
+                <Button onClick={() => decreaseBagQuantity(id)}>-</Button>
                 <div>
                   <span className="fs-3">{quantity} </span>
-                  in Cart
+                  in Bag
                 </div>
-                <Button onClick={() => increaseCartQuantity(id)}>+</Button>
+                <Button onClick={() => increaseBagQuantity(id)}>+</Button>
               </div>
               <Button
                 variant="danger"
                 size="sm"
-                onClick={() => removeFromCart(id)}
+                onClick={() => removeFromBag(id)}
               >
                 Remove
               </Button>

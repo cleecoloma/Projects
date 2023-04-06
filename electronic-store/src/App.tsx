@@ -4,11 +4,11 @@ import Home from "./pages/Home";
 import Store from "./pages/Store";
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
-import { ShoppingCartProvider } from "./context/ShoppingCartContent";
+import { ShoppingBagProvider } from "./context/ShoppingBagContent";
 
 function App() {
   return (
-    <ShoppingCartProvider>
+    <ShoppingBagProvider>
       <Container className="mb-4">
         <Navbar />
         <Routes>
@@ -17,7 +17,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </Container>
-    </ShoppingCartProvider>
+    </ShoppingBagProvider>
   );
 }
 

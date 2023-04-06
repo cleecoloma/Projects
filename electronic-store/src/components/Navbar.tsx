@@ -1,15 +1,10 @@
-import {
-  Button,
-  Container,
-  Nav,
-  Navbar as NavbarBs,
-} from "react-bootstrap";
+import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap";
 
-import { NavLink } from "react-router-dom"
-import { useShoppingCart } from "../context/ShoppingCartContent";
+import { NavLink } from "react-router-dom";
+import { useShoppingBag } from "../context/ShoppingBagContent";
 
 function Navbar() {
-  const { openCart, cartQuantity } = useShoppingCart();
+  const { openBag, bagQuantity } = useShoppingBag();
   return (
     <NavbarBs className="bg-white shadow-sm mb-3">
       <Container>
@@ -24,9 +19,9 @@ function Navbar() {
             About
           </Nav.Link>
         </Nav>
-        {cartQuantity > 0 && (
+        {bagQuantity > 0 && (
           <Button
-            onClick={openCart}
+            onClick={openBag}
             style={{ width: "3rem", height: "3rem", position: "relative" }}
             variant="outline-primary"
             className="rounded-circle"
@@ -53,7 +48,7 @@ function Navbar() {
               }}
               className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
             >
-              {cartQuantity}
+              {bagQuantity}
             </div>
           </Button>
         )}
