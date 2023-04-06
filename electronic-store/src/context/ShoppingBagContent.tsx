@@ -1,5 +1,6 @@
 import { createContext, useContext, ReactNode, useState } from "react";
 import ShoppingBag from "../components/ShoppingBag";
+import useLocalStorage from "../hooks/useLocalStorage";
 
 type ShoppingBagProvider = {
   children: ReactNode;
@@ -29,16 +30,20 @@ function useShoppingBag() {
 
 function ShoppingBagProvider({ children }: ShoppingBagProvider) {
   const [isOpen, setIsOpen] = useState(false);
-  const [bagItems, setBagItems] = useState<BagItem[]>([]);
-  const bagQuantity = bagItems.reduce((quantity, item) => item.quantity + quantity, 0)
+  const [bagItems, setBagItems] = useLocalStorage<BagItem[]>(
+    "shopping-bag",
+    []
+  );
 
+  const bagQuantity = bagItems.reduce(
+    (quantity, item) => item.quantity + quantity,
+    0
+  );
   const openBag = () => setIsOpen(true);
   const closeBag = () => setIsOpen(false);
 
   function getItemQuantity(id: number) {
-    return (
-      bagItems.find((item) => item.id === id)?.quantity || 0
-    )
+    return bagItems.find((item) => item.id === id)?.quantity || 0;
   }
 
   function increaseBagQuantity(id: number) {
@@ -60,7 +65,7 @@ function ShoppingBagProvider({ children }: ShoppingBagProvider) {
   function decreaseBagQuantity(id: number) {
     setBagItems((currItems) => {
       if (currItems.find((item) => item.id === id)?.quantity === 1) {
-        return currItems.filter(item => item.id !== id)
+        return currItems.filter((item) => item.id !== id);
       } else {
         return currItems.map((item) => {
           if (item.id === id) {
@@ -76,11 +81,22 @@ function ShoppingBagProvider({ children }: ShoppingBagProvider) {
   function removeFromBag(id: number) {
     setBagItems((currItems) => {
       return currItems.filter((item) => item.id !== id);
-    })
+    });
   }
 
   return (
-    <ShoppingBagContext.Provider value={{ getItemQuantity, increaseBagQuantity, decreaseBagQuantity, removeFromBag, openBag, closeBag, bagItems, bagQuantity }}>
+    <ShoppingBagContext.Provider
+      value={{
+        getItemQuantity,
+        increaseBagQuantity,
+        decreaseBagQuantity,
+        removeFromBag,
+        openBag,
+        closeBag,
+        bagItems,
+        bagQuantity,
+      }}
+    >
       {children}
       <ShoppingBag isOpen={isOpen} />
     </ShoppingBagContext.Provider>
