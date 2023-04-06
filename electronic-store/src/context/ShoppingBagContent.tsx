@@ -1,4 +1,5 @@
 import { createContext, useContext, ReactNode, useState } from "react";
+import ShoppingBag from "../components/ShoppingBag";
 
 type ShoppingBagProvider = {
   children: ReactNode;
@@ -81,6 +82,7 @@ function ShoppingBagProvider({ children }: ShoppingBagProvider) {
   return (
     <ShoppingBagContext.Provider value={{ getItemQuantity, increaseBagQuantity, decreaseBagQuantity, removeFromBag, openBag, closeBag, bagItems, bagQuantity }}>
       {children}
+      <ShoppingBag isOpen={isOpen} />
     </ShoppingBagContext.Provider>
   );
 }
