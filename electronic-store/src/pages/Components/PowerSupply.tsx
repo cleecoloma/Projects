@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Power-Supply() {
+function PowerSupply() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Power-Supply() {
   )
 }
 
-export default Power-Supply
+export default PowerSupply
