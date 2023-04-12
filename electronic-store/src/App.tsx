@@ -5,6 +5,14 @@ import Store from "./pages/Store";
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
 import { ShoppingBagProvider } from "./context/ShoppingBagContent";
+import Cases from "./pages/Components/Cases";
+import Cooling from "./pages/Components/Cooling";
+import CPU from "./pages/Components/CPU";
+import GPU from "./pages/Components/GPU";
+import Memory from "./pages/Components/Memory";
+import Motherboard from "./pages/Components/Motherboard";
+import Storages from "./pages/Components/Storages";
+import PowerSupply from "./pages/Components/PowerSupply";
 
 function App() {
   return (
@@ -15,6 +23,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
+          <Route path="/store/cases" element={<Cases />} />
+          <Route path="/store/cooling" element={<Cooling />} />
+          <Route path="/store/cpu" element={<CPU />} />
+          <Route path="/store/gpu" element={<GPU />} />
+          <Route path="/store/memory" element={<Memory />} />
+          <Route path="/store/motherboard" element={<Motherboard />} />
+          <Route path="/store/powersupply" element={<PowerSupply />} />
+          <Route path="/store/storage" element={<Storages />} />
         </Routes>
       </Container>
     </ShoppingBagProvider>

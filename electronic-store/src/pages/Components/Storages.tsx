@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Storage() {
+function Storages() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Storage() {
   )
 }
 
-export default Storage
+export default Storages
