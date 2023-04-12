@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import StoreNavBar from "../../components/StoreNavbar";
 
 function Memory() {
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <StoreNavBar />
+      <h1>Memory</h1>
+    </>
+  );
 }
 
 export default Memory

@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import StoreNavBar from "../../components/StoreNavbar";
 
 function Storages() {
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <StoreNavBar />
+      <h1>Storages</h1>
+    </>
+  );
 }
 
 export default Storages

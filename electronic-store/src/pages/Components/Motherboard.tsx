@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import StoreNavBar from "../../components/StoreNavbar";
 
 function Motherboard() {
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <StoreNavBar />
+      <h1>Motherboard</h1>
+    </>
+  );
 }
 
 export default Motherboard

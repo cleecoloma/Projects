@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import StoreNavBar from "../../components/StoreNavbar";
 
 function PowerSupply() {
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <StoreNavBar />
+      <h1>Power Supply</h1>
+    </>
+  );
 }
 
 export default PowerSupply
