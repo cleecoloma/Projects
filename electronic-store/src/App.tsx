@@ -5,7 +5,7 @@ import Store from "./pages/Store";
 import About from "./pages/About";
 import Navbar from "./components/Navbar";
 import { ShoppingBagProvider } from "./context/ShoppingBagContent";
-import Cases from "./pages/Components/Cases";
+import Cases from "./pages/Components/Case";
 import Cooling from "./pages/Components/Cooling";
 import CPU from "./pages/Components/CPU";
 import GPU from "./pages/Components/GPU";

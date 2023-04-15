@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Corsair 400D Airflow - Black",
+    "price": 104.99,
+    "imgUrl": "/imgs/case/corsair-400d-black-1.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Corsair 5000D Airflow - White",
+    "price": 174.99,
+    "imgUrl": "/imgs/case/corsair-5000d-white-1.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Fractal Design North",
+    "price": 139.99,
+    "imgUrl": "/imgs/case/fractal-design-north-1.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Fractal Design Pop - Black",
+    "price": 89.99,
+    "imgUrl": "/imgs/case/fractal-design-pop-black-1.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Fractal Design Pop - White",
+    "price": 89.99,
+    "imgUrl": "/imgs/case/fractal-design-pop-white-1.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Phanteks P300A Mesh",
+    "price": 79.99,
+    "imgUrl": "/imgs/case/phanteks-p300a-mesh-1.jpeg"
+  }
+]
