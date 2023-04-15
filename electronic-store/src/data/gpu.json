@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "ASRock Challenger RX 5600 XT ",
+    "price": 199.99,
+    "imgUrl": "/imgs/gpu/asrock-rx-5600-xt-1.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "ASRock Challenger RX 5700 XT ",
+    "price": 229.99,
+    "imgUrl": "/imgs/gpu/asrock-rx-5700-xt-1.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "ASRock Phantom RX 7900 XTX",
+    "price": 999.99,
+    "imgUrl": "/imgs/gpu/asrock-rx-7900-xtx-1.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "MSI Ventus RTX 3060",
+    "price": 359.99,
+    "imgUrl": "/imgs/gpu/msi-rtx-3060-1.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "MSI Gaming RTX 4070 TI",
+    "price": 579.99,
+    "imgUrl": "/imgs/gpu/msi-rtx-4070-ti-1.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "MSI Mech RX 6700 XT",
+    "price": 369.99,
+    "imgUrl": "/imgs/gpu/msi-rx-6700-xt-1.jpeg"
+  }
+]
