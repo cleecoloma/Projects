@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "be quiet! Dark Rock Pro 4",
+    "price": 89.99,
+    "imgUrl": "/imgs/cooling/be-quiet-dark-rock-pro-4-1.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "CoolerMaster ML120L RGB",
+    "price": 89.99,
+    "imgUrl": "/imgs/cooling/cooler-master-ml120l-1.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Cooler Master Hyper 212",
+    "price": 59.99,
+    "imgUrl": "/imgs/cooling/cooler-master-hyper-212-1.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Corsair H100i Elite - White",
+    "price": 179.99,
+    "imgUrl": "/imgs/cooling/corsair-h100i-white-1.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Corsair H115i Elite - Black",
+    "price": 169.99,
+    "imgUrl": "/imgs/cooling/corsair-h115i-elite-1.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Thermalright Assassin X120",
+    "price": 22.99,
+    "imgUrl": "/imgs/cooling/thermalright-assassinx120-1.jpeg"
+  }
+]
