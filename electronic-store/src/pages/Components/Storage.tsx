@@ -1,7 +1,7 @@
 import React from 'react';
 import StoreNavBar from "../../components/StoreNavbar";
 import { Col, Row } from "react-bootstrap";
-import storeItems from "../../data/motherboard.json";
+import storeItems from "../../data/storage.json";
 import StoreItem from "../../components/StoreItem";
 
 function Storage() {
