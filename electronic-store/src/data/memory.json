@@ -1,38 +1,38 @@
 [
   {
     "id": 1,
-    "name": "Corsair RM750 White",
-    "price": 129.99,
-    "imgUrl": "/imgs/memory/corsair-rm750-white-1.jpeg"
+    "name": "Corsair Vengeance RGB DDR4 32GB",
+    "price": 89.99,
+    "imgUrl": "/imgs/memory/corsair-ddr4-32gb-1.jpeg"
   },
   {
     "id": 2,
-    "name": "Corsair RM1000x Black",
-    "price": 189.99,
-    "imgUrl": "/imgs/memory/corsair-rm1000x-black-1.jpeg"
+    "name": "G Skill TridentZ RGB DDR4 32GB",
+    "price": 87.99,
+    "imgUrl": "/imgs/memory/g-skill-ddr4-32gb-1.jpeg"
   },
   {
     "id": 3,
-    "name": "Corsair SF750 Black",
-    "price": 184.99,
-    "imgUrl": "/imgs/memory/corsair-sf750-black-1.jpeg"
+    "name": "G Skill TridentZ RGB DDR5 32GB",
+    "price": 119.99,
+    "imgUrl": "/imgs/memory/g-skill-ddr5-32gb-1.jpeg"
   },
   {
     "id": 4,
-    "name": "MSI MPG A1000G Black",
-    "price": 199.99,
-    "imgUrl": "/imgs/memory/msi-mpg-1000-1.jpeg"
+    "name": "G Skill Ripjaws S5 DDR5 32GB",
+    "price": 129.99,
+    "imgUrl": "/imgs/memory/g-skill-white-ddr5-32gb-1.jpeg"
   },
   {
     "id": 5,
-    "name": "Segotep GM850 Black",
-    "price": 109.99,
-    "imgUrl": "/imgs/memory/segotep-gm850-1.jpeg"
+    "name": "OLOy OWL RGB DDR4 32GB",
+    "price": 69.99,
+    "imgUrl": "/imgs/memory/oloy-ddr4-32gb-1.jpeg"
   },
   {
     "id": 6,
-    "name": "Thermaltake Smart 700 Black",
-    "price": 89.99,
-    "imgUrl": "/imgs/memory/thermaltake-smart700-1.jpeg"
+    "name": "OLOy Blade RGB DDR5 32GB",
+    "price": 94.99,
+    "imgUrl": "/imgs/memory/oloy-ddr5-32gb-1.jpeg"
   }
 ]
