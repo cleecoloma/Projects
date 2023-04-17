@@ -11,7 +11,7 @@ import CPU from "./pages/Components/CPU";
 import GPU from "./pages/Components/GPU";
 import Memory from "./pages/Components/Memory";
 import Motherboard from "./pages/Components/Motherboard";
-import Storages from "./pages/Components/Storages";
+import Storages from "./pages/Components/Storage";
 import PowerSupply from "./pages/Components/PowerSupply";
 
 function App() {

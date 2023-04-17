@@ -1,7 +1,7 @@
 import React from 'react';
 import StoreNavBar from "../../components/StoreNavbar";
 
-function Storages() {
+function Storage() {
   return (
     <>
       <StoreNavBar />
@@ -10,4 +10,4 @@ function Storages() {
   );
 }
 
-export default Storages
+export default Storage
