@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "ASRock B760M Sonic",
+    "price": 189.99,
+    "imgUrl": "/imgs/motherboard/asrock-b760m-sonic-1.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "ASUS ROG STRIX X670E-E Gaming",
+    "price": 499.99,
+    "imgUrl": "/imgs/motherboard/asus-rog-strix-x670e-e-gaming-wifi-1.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "ASUS ROG STRIX X670E-I Gaming",
+    "price": 469.99,
+    "imgUrl": "/imgs/motherboard/asus-rog-strix-x670e-i-gaming-1.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Gigabyte X670E Aorus Master",
+    "price": 499.99,
+    "imgUrl": "/imgs/motherboard/gigabyte-x670e-aorus-master-1.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Gigabyte Z790 Aorus Elite",
+    "price": 259.99,
+    "imgUrl": "/imgs/motherboard/gigabyte-z790-aorus-elite-1.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "MSI MAG X670E Tomahawk Wifi",
+    "price": 309.99,
+    "imgUrl": "/imgs/motherboard/msi-mag-x670w-tomahawk-wifi-1.jpeg"
+  }
+]
