@@ -10,7 +10,7 @@ import caseItems from "../data/case.json";
 import coolingItems from "../data/cooling.json";
 import StoreItem from "../components/StoreItem";
 
-const storeItems = [
+const allItems = [
   ...cpuItems,
   ...gpuItems,
   ...storageItems,
@@ -26,7 +26,7 @@ function Store() {
     <>
       <StoreNavBar />
       <Row md={2} xs={1} lg={3} className="g-3">
-        {storeItems.map((item) => (
+        {allItems.map((item) => (
           <Col key={item.id}>
             <StoreItem {...item} />
           </Col>
