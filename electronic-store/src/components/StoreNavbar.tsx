@@ -6,6 +6,9 @@ function Navbar() {
     <NavbarBs className="bg-white shadow-sm mb-3">
       <Container>
         <Nav>
+          <Nav.Link to="/store/all" as={NavLink}>
+            ALL
+          </Nav.Link>
           <Nav.Link to="/store/cpu" as={NavLink}>
             CPU
           </Nav.Link>

@@ -13,6 +13,7 @@ import Memory from "./pages/Components/Memory";
 import Motherboard from "./pages/Components/Motherboard";
 import Storages from "./pages/Components/Storage";
 import PowerSupply from "./pages/Components/PowerSupply";
+import All from "./pages/Components/All";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/store" element={<Store />} />
           <Route path="/about" element={<About />} />
+          <Route path="/store/all" element={<All />} />
           <Route path="/store/cases" element={<Cases />} />
           <Route path="/store/cooling" element={<Cooling />} />
           <Route path="/store/cpu" element={<CPU />} />
