@@ -10,13 +10,13 @@ function Navbar() {
       <Container>
         <Nav>
           <Nav.Link to="/" as={NavLink}>
-            Home
+            <h4>Home</h4>
           </Nav.Link>
           <Nav.Link to="/store/all" as={NavLink}>
-            Store
+            <h4>Store</h4>
           </Nav.Link>
           <Nav.Link to="/about" as={NavLink}>
-            About
+            <h4>About</h4>
           </Nav.Link>
         </Nav>
         {bagQuantity > 0 && (
@@ -39,8 +39,8 @@ function Navbar() {
             <div
               style={{
                 color: "white",
-                width: "1.5rem",
-                height: "1.5rem",
+                width: "1.2rem",
+                height: "1.2rem",
                 position: "absolute",
                 bottom: 0,
                 right: 0,
