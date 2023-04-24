@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
 function About() {
   return (
-    <div>
-      <h4>Welcome to our PC component e-commerce website!</h4>
-      <p>
+    <Card style={{ width: '60rem' }} className='d-flex m-auto'>
+      <Card.Body>
+        <Card.Title>Welcome to our PC component e-commerce website!</Card.Title>
+        <Card.Text>
+          <p>
         We understand that building your own custom PC is important to many of
         our customers, and that’s why we offer a comprehensive selection of
         high-quality PC components from the world’s leading brands.
@@ -37,7 +41,9 @@ function About() {
         price. We are proud to be a trusted source for PC components, and we
         look forward to helping you build the perfect PC.
       </p>
-    </div>
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 }
 
