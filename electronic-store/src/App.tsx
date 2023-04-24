@@ -14,6 +14,7 @@ import Motherboard from "./pages/Components/Motherboard";
 import Storages from "./pages/Components/Storage";
 import PowerSupply from "./pages/Components/PowerSupply";
 import All from "./pages/Components/All";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
           <Route path="/store/powersupply" element={<PowerSupply />} />
           <Route path="/store/storage" element={<Storages />} />
         </Routes>
+      </Container>
+      <Container className="fixed-bottom bg-secondary d-flex shadow-sm justify-content-center">
+        <Footer />
       </Container>
     </ShoppingBagProvider>
   );
