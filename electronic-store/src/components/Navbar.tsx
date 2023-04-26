@@ -18,6 +18,9 @@ function Navbar() {
           <Nav.Link to="/about" as={NavLink}>
             <h4>About</h4>
           </Nav.Link>
+          <Nav.Link to="/contact" as={NavLink}>
+            <h4>Contact</h4>
+          </Nav.Link>
         </Nav>
         {bagQuantity > 0 && (
           <Button
