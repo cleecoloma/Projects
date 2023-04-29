@@ -3,36 +3,36 @@
     "id": 1,
     "name": "Corsair Vengeance RGB DDR4 32GB",
     "price": 89.99,
-    "imgUrl": "/imgs/memory/corsair-ddr4-32gb-1.jpeg"
+    "imgUrl": "/imgs/memory/corsair-ddr4-32gb-"
   },
   {
     "id": 2,
     "name": "G Skill TridentZ RGB DDR4 32GB",
     "price": 87.99,
-    "imgUrl": "/imgs/memory/g-skill-ddr4-32gb-1.jpeg"
+    "imgUrl": "/imgs/memory/g-skill-ddr4-32gb-"
   },
   {
     "id": 3,
     "name": "G Skill TridentZ RGB DDR5 32GB",
     "price": 119.99,
-    "imgUrl": "/imgs/memory/g-skill-ddr5-32gb-1.jpeg"
+    "imgUrl": "/imgs/memory/g-skill-ddr5-32gb-"
   },
   {
     "id": 4,
     "name": "G Skill Ripjaws S5 DDR5 32GB",
     "price": 129.99,
-    "imgUrl": "/imgs/memory/g-skill-white-ddr5-32gb-1.jpeg"
+    "imgUrl": "/imgs/memory/g-skill-white-ddr5-32gb-"
   },
   {
     "id": 5,
     "name": "OLOy OWL RGB DDR4 32GB",
     "price": 69.99,
-    "imgUrl": "/imgs/memory/oloy-ddr4-32gb-1.jpeg"
+    "imgUrl": "/imgs/memory/oloy-ddr4-32gb-"
   },
   {
     "id": 6,
     "name": "OLOy Blade RGB DDR5 32GB",
     "price": 94.99,
-    "imgUrl": "/imgs/memory/oloy-ddr5-32gb-1.jpeg"
+    "imgUrl": "/imgs/memory/oloy-ddr5-32gb-"
   }
 ]

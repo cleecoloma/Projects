@@ -3,36 +3,36 @@
     "id": 1,
     "name": "Corsair RM750 White",
     "price": 129.99,
-    "imgUrl": "/imgs/power-supply/corsair-rm750-white-1.jpeg"
+    "imgUrl": "/imgs/power-supply/corsair-rm750-white-"
   },
   {
     "id": 2,
     "name": "Corsair RM1000x Black",
     "price": 189.99,
-    "imgUrl": "/imgs/power-supply/corsair-rm1000x-black-1.jpeg"
+    "imgUrl": "/imgs/power-supply/corsair-rm1000x-black-"
   },
   {
     "id": 3,
     "name": "Corsair SF750 Black",
     "price": 184.99,
-    "imgUrl": "/imgs/power-supply/corsair-sf750-black-1.jpeg"
+    "imgUrl": "/imgs/power-supply/corsair-sf750-black-"
   },
   {
     "id": 4,
     "name": "MSI MPG A1000G Black",
     "price": 199.99,
-    "imgUrl": "/imgs/power-supply/msi-mpg-1000-1.jpeg"
+    "imgUrl": "/imgs/power-supply/msi-mpg-1000-"
   },
   {
     "id": 5,
     "name": "Segotep GM850 Black",
     "price": 109.99,
-    "imgUrl": "/imgs/power-supply/segotep-gm850-1.jpeg"
+    "imgUrl": "/imgs/power-supply/segotep-gm850-"
   },
   {
     "id": 6,
     "name": "Thermaltake Smart 700 Black",
     "price": 89.99,
-    "imgUrl": "/imgs/power-supply/thermaltake-smart700-1.jpeg"
+    "imgUrl": "/imgs/power-supply/thermaltake-smart700-"
   }
 ]

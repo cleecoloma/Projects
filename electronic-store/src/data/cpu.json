@@ -3,36 +3,36 @@
     "id": 1,
     "name": "AMD Ryzen 5 5600x",
     "price": 168.99,
-    "imgUrl": "/imgs/cpu/amd-ryzen-5-5600x-1.jpeg"
+    "imgUrl": "/imgs/cpu/amd-ryzen-5-5600x-"
   },
   {
     "id": 2,
     "name": "AMD Ryzen 9 5950x",
     "price": 499.99,
-    "imgUrl": "/imgs/cpu/amd-ryzen-9-5950x-1.jpeg"
+    "imgUrl": "/imgs/cpu/amd-ryzen-9-5950x-"
   },
   {
     "id": 3,
     "name": "AMD Ryzen 9 7900X3D",
     "price": 599.99,
-    "imgUrl": "/imgs/cpu/amd-ryzen-9-7900x3d-1.jpeg"
+    "imgUrl": "/imgs/cpu/amd-ryzen-9-7900x3d-"
   },
   {
     "id": 4,
     "name": "Intel i7-13700K",
     "price": 419.99,
-    "imgUrl": "/imgs/cpu/intel-i7-13700k-1.jpeg"
+    "imgUrl": "/imgs/cpu/intel-i7-13700k-"
   },
   {
     "id": 5,
     "name": "Intel i9-13900K",
     "price": 579.99,
-    "imgUrl": "/imgs/cpu/intel-i9-13900k-1.jpeg"
+    "imgUrl": "/imgs/cpu/intel-i9-13900k-"
   },
   {
     "id": 6,
     "name": "Intel i9-13900KF",
     "price": 549.99,
-    "imgUrl": "/imgs/cpu/intel-i9-13900kf-1.jpeg"
+    "imgUrl": "/imgs/cpu/intel-i9-13900kf-"
   }
 ]

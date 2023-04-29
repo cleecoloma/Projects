@@ -3,36 +3,36 @@
     "id": 1,
     "name": "Crucial MX500 1TB SSD",
     "price": 49.99,
-    "imgUrl": "/imgs/storage/crucial-mx500-1tb-ssd-1.jpeg"
+    "imgUrl": "/imgs/storage/crucial-mx500-1tb-ssd-"
   },
   {
     "id": 2,
     "name": "Crucial P3 Plus 1TB NVME",
     "price": 51.99,
-    "imgUrl": "/imgs/storage/crucial-p3-nvme-1tb-1.jpeg"
+    "imgUrl": "/imgs/storage/crucial-p3-nvme-1tb-"
   },
   {
     "id": 3,
     "name": "Samsung 870 EVO 4TB SSD",
     "price": 249.99,
-    "imgUrl": "/imgs/storage/samsung-870evo-4tb-ssd-1.jpeg"
+    "imgUrl": "/imgs/storage/samsung-870evo-4tb-ssd-"
   },
   {
     "id": 4,
     "name": "Samsung 980 PRO 2TB NVME",
     "price": 139.99,
-    "imgUrl": "/imgs/storage/samsung-980pro-2tb-nvme-1.jpeg"
+    "imgUrl": "/imgs/storage/samsung-980pro-2tb-nvme-"
   },
   {
     "id": 5,
     "name": "Solidigm P41 Plus 2TB NVME",
     "price": 99.99,
-    "imgUrl": "/imgs/storage/solidigm-p41-2tb-1.jpeg"
+    "imgUrl": "/imgs/storage/solidigm-p41-2tb-"
   },
   {
     "id": 6,
     "name": "WD Black SN850X 1TB NVME",
     "price": 109.99,
-    "imgUrl": "/imgs/storage/wd-sn850x-nvme-1.jpeg"
+    "imgUrl": "/imgs/storage/wd-sn850x-nvme-"
   }
 ]
