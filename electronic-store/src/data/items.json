@@ -1,288 +1,336 @@
 [
   {
     "id": 1,
+    "component": "cpu",
     "name": "AMD Ryzen 5 5600x",
     "price": 168.99,
     "imgUrl": "/imgs/cpu/amd-ryzen-5-5600x-1.jpeg"
   },
   {
     "id": 2,
+    "component": "cpu",
     "name": "AMD Ryzen 9 5950x",
     "price": 499.99,
     "imgUrl": "/imgs/cpu/amd-ryzen-9-5950x-1.jpeg"
   },
   {
     "id": 3,
+    "component": "cpu",
     "name": "AMD Ryzen 9 7900X3D",
     "price": 599.99,
     "imgUrl": "/imgs/cpu/amd-ryzen-9-7900x3d-1.jpeg"
   },
   {
     "id": 4,
+    "component": "cpu",
     "name": "Intel i7-13700K",
     "price": 419.99,
     "imgUrl": "/imgs/cpu/intel-i7-13700k-1.jpeg"
   },
   {
     "id": 5,
+    "component": "cpu",
     "name": "Intel i9-13900K",
     "price": 579.99,
     "imgUrl": "/imgs/cpu/intel-i9-13900k-1.jpeg"
   },
   {
     "id": 6,
+    "component": "cpu",
     "name": "Intel i9-13900KF",
     "price": 549.99,
     "imgUrl": "/imgs/cpu/intel-i9-13900kf-1.jpeg"
   },
   {
     "id": 7,
+    "component": "gpu",
     "name": "ASRock Challenger RX 5600 XT",
     "price": 199.99,
     "imgUrl": "/imgs/gpu/asrock-rx-5600-xt-1.jpeg"
   },
   {
     "id": 8,
+    "component": "gpu",
     "name": "ASRock Challenger RX 5700 XT",
     "price": 229.99,
     "imgUrl": "/imgs/gpu/asrock-rx-5700-xt-1.jpeg"
   },
   {
     "id": 9,
+    "component": "gpu",
     "name": "ASRock Phantom RX 7900 XTX",
     "price": 999.99,
     "imgUrl": "/imgs/gpu/asrock-rx-7900-xtx-1.jpeg"
   },
   {
     "id": 10,
+    "component": "gpu",
     "name": "MSI Ventus RTX 3060",
     "price": 359.99,
     "imgUrl": "/imgs/gpu/msi-rtx-3060-1.jpeg"
   },
   {
     "id": 11,
+    "component": "gpu",
     "name": "MSI Gaming RTX 4070 TI",
     "price": 579.99,
     "imgUrl": "/imgs/gpu/msi-rtx-4070-ti-1.jpeg"
   },
   {
     "id": 12,
+    "component": "gpu",
     "name": "MSI Mech RX 6700 XT",
     "price": 369.99,
     "imgUrl": "/imgs/gpu/msi-rx-6700-xt-1.jpeg"
   },
   {
     "id": 13,
+    "component": "storage",
     "name": "Crucial MX500 1TB SSD",
     "price": 49.99,
     "imgUrl": "/imgs/storage/crucial-mx500-1tb-ssd-1.jpeg"
   },
   {
     "id": 14,
+    "component": "storage",
     "name": "Crucial P3 Plus 1TB NVME",
     "price": 51.99,
     "imgUrl": "/imgs/storage/crucial-p3-nvme-1tb-1.jpeg"
   },
   {
     "id": 15,
+    "component": "storage",
     "name": "Samsung 870 EVO 4TB SSD",
     "price": 249.99,
     "imgUrl": "/imgs/storage/samsung-870evo-4tb-ssd-1.jpeg"
   },
   {
     "id": 16,
+    "component": "storage",
     "name": "Samsung 980 PRO 2TB NVME",
     "price": 139.99,
     "imgUrl": "/imgs/storage/samsung-980pro-2tb-nvme-1.jpeg"
   },
   {
     "id": 17,
+    "component": "storage",
     "name": "Solidigm P41 Plus 2TB NVME",
     "price": 99.99,
     "imgUrl": "/imgs/storage/solidigm-p41-2tb-1.jpeg"
   },
   {
     "id": 18,
+    "component": "storage",
     "name": "WD Black SN850X 1TB NVME",
     "price": 109.99,
     "imgUrl": "/imgs/storage/wd-sn850x-nvme-1.jpeg"
   },
   {
     "id": 19,
+    "component": "memory",
     "name": "Corsair Vengeance RGB DDR4 32GB",
     "price": 89.99,
     "imgUrl": "/imgs/memory/corsair-ddr4-32gb-1.jpeg"
   },
   {
     "id": 20,
+    "component": "memory",
     "name": "G Skill TridentZ RGB DDR4 32GB",
     "price": 87.99,
     "imgUrl": "/imgs/memory/g-skill-ddr4-32gb-1.jpeg"
   },
   {
     "id": 21,
+    "component": "memory",
     "name": "G Skill TridentZ RGB DDR5 32GB",
     "price": 119.99,
     "imgUrl": "/imgs/memory/g-skill-ddr5-32gb-1.jpeg"
   },
   {
     "id": 22,
+    "component": "memory",
     "name": "G Skill Ripjaws S5 DDR5 32GB",
     "price": 129.99,
     "imgUrl": "/imgs/memory/g-skill-white-ddr5-32gb-1.jpeg"
   },
   {
     "id": 23,
+    "component": "memory",
     "name": "OLOy OWL RGB DDR4 32GB",
     "price": 69.99,
     "imgUrl": "/imgs/memory/oloy-ddr4-32gb-1.jpeg"
   },
   {
     "id": 24,
+    "component": "memory",
     "name": "OLOy Blade RGB DDR5 32GB",
     "price": 94.99,
     "imgUrl": "/imgs/memory/oloy-ddr5-32gb-1.jpeg"
   },
   {
     "id": 25,
+    "component": "motherboard",
     "name": "ASRock B760M Sonic",
     "price": 189.99,
     "imgUrl": "/imgs/motherboard/asrock-b760m-sonic-1.jpeg"
   },
   {
     "id": 26,
+    "component": "motherboard",
     "name": "ASUS ROG STRIX X670E-E Gaming",
     "price": 499.99,
     "imgUrl": "/imgs/motherboard/asus-rog-strix-x670e-e-gaming-wifi-1.jpeg"
   },
   {
     "id": 27,
+    "component": "motherboard",
     "name": "ASUS ROG STRIX X670E-I Gaming",
     "price": 469.99,
     "imgUrl": "/imgs/motherboard/asus-rog-strix-x670e-i-gaming-1.jpeg"
   },
   {
     "id": 28,
+    "component": "motherboard",
     "name": "Gigabyte X670E Aorus Master",
     "price": 499.99,
     "imgUrl": "/imgs/motherboard/gigabyte-x670e-aorus-master-1.jpeg"
   },
   {
     "id": 29,
+    "component": "motherboard",
     "name": "Gigabyte Z790 Aorus Elite",
     "price": 259.99,
     "imgUrl": "/imgs/motherboard/gigabyte-z790-aorus-elite-1.jpeg"
   },
   {
     "id": 30,
+    "component": "motherboard",
     "name": "MSI MAG X670E Tomahawk Wifi",
     "price": 309.99,
     "imgUrl": "/imgs/motherboard/msi-mag-x670w-tomahawk-wifi-1.jpeg"
   },
   {
     "id": 31,
+    "component": "power-supply",
     "name": "Corsair RM750 White",
     "price": 129.99,
     "imgUrl": "/imgs/power-supply/corsair-rm750-white-1.jpeg"
   },
   {
     "id": 32,
+    "component": "power-supply",
     "name": "Corsair RM1000x Black",
     "price": 189.99,
     "imgUrl": "/imgs/power-supply/corsair-rm1000x-black-1.jpeg"
   },
   {
     "id": 33,
+    "component": "power-supply",
     "name": "Corsair SF750 Black",
     "price": 184.99,
     "imgUrl": "/imgs/power-supply/corsair-sf750-black-1.jpeg"
   },
   {
     "id": 34,
+    "component": "power-supply",
     "name": "MSI MPG A1000G Black",
     "price": 199.99,
     "imgUrl": "/imgs/power-supply/msi-mpg-1000-1.jpeg"
   },
   {
     "id": 35,
+    "component": "power-supply",
     "name": "Segotep GM850 Black",
     "price": 109.99,
     "imgUrl": "/imgs/power-supply/segotep-gm850-1.jpeg"
   },
   {
     "id": 36,
+    "component": "power-supply",
     "name": "Thermaltake Smart 700 Black",
     "price": 89.99,
     "imgUrl": "/imgs/power-supply/thermaltake-smart700-1.jpeg"
   },
   {
     "id": 37,
+    "component": "case",
     "name": "Corsair 400D Airflow - Black",
     "price": 104.99,
     "imgUrl": "/imgs/case/corsair-400d-black-1.jpeg"
   },
   {
     "id": 38,
+    "component": "case",
     "name": "Corsair 5000D Airflow - White",
     "price": 174.99,
     "imgUrl": "/imgs/case/corsair-5000d-white-1.jpeg"
   },
   {
     "id": 39,
+    "component": "case",
     "name": "Fractal Design North",
     "price": 139.99,
     "imgUrl": "/imgs/case/fractal-design-north-1.jpeg"
   },
   {
     "id": 40,
+    "component": "case",
     "name": "Fractal Design Pop - Black",
     "price": 89.99,
     "imgUrl": "/imgs/case/fractal-design-pop-black-1.jpeg"
   },
   {
     "id": 41,
+    "component": "case",
     "name": "Fractal Design Pop - White",
     "price": 89.99,
     "imgUrl": "/imgs/case/fractal-design-pop-white-1.jpeg"
   },
   {
     "id": 42,
+    "component": "case",
     "name": "Phanteks P300A Mesh",
     "price": 79.99,
     "imgUrl": "/imgs/case/phanteks-p300a-mesh-1.jpeg"
   },
   {
     "id": 43,
+    "component": "cooling",
     "name": "be quiet! Dark Rock Pro 4",
     "price": 89.99,
     "imgUrl": "/imgs/cooling/be-quiet-dark-rock-pro-4-1.jpeg"
   },
   {
     "id": 44,
+    "component": "cooling",
     "name": "CoolerMaster ML120L RGB",
     "price": 89.99,
     "imgUrl": "/imgs/cooling/cooler-master-ml120l-1.jpeg"
   },
   {
     "id": 45,
+    "component": "cooling",
     "name": "Cooler Master Hyper 212",
     "price": 59.99,
     "imgUrl": "/imgs/cooling/cooler-master-hyper-212-1.jpeg"
   },
   {
     "id": 46,
+    "component": "cooling",
     "name": "Corsair H100i Elite - White",
     "price": 179.99,
     "imgUrl": "/imgs/cooling/corsair-h100i-white-1.jpeg"
   },
   {
     "id": 47,
+    "component": "cooling",
     "name": "Corsair H115i Elite - Black",
     "price": 169.99,
     "imgUrl": "/imgs/cooling/corsair-h115i-elite-1.jpeg"
   },
   {
     "id": 48,
+    "component": "cooling",
     "name": "Thermalright Assassin X120",
     "price": 22.99,
     "imgUrl": "/imgs/cooling/thermalright-assassinx120-1.jpeg"
