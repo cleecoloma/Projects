@@ -1,26 +1,26 @@
 import Carousel from "react-bootstrap/Carousel";
 
-function ImageSlide(imgUrl : string) {
+function ImageSlide(props : string) {
   return (
-    <Carousel>
+    <Carousel interval={null} variant="dark">
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={imgUrl} + "1.jpeg"
+          src={props.imgUrl + "1.jpeg"}
           alt="First slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          src={props.imgUrl + "2.jpeg"}
           alt="Second slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
+          src={props.imgUrl + "3.jpeg"}
           alt="Third slide"
         />
       </Carousel.Item>

@@ -1,6 +1,7 @@
 import { Card, Button } from "react-bootstrap";
 import formatCurrency from "../utilities/formatCurrency";
 import { useShoppingBag } from "../context/ShoppingBagContent";
+import ImageSlide from "./ImageSlide";
 
 type StoreItemProps = {
   id: number;
@@ -19,12 +20,13 @@ function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
   const quantity = getItemQuantity(id);
   return (
     <Card className="h-100">
-      <Card.Img
+      <ImageSlide imgUrl={imgUrl} />
+      {/* <Card.Img
         variant="top"
         src={imgUrl}
         height="350px"
         style={{ objectFit: "cover" }}
-      />
+      /> */}
       <Card.Body className="d-flex flex-column">
         <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
           <span className="fs-2">{name}</span>
