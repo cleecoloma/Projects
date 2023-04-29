@@ -22,7 +22,7 @@ function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
       <Card.Img
         variant="top"
         src={imgUrl}
-        height="200px"
+        height="350px"
         style={{ objectFit: "cover" }}
       />
       <Card.Body className="d-flex flex-column">
