@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import { Card } from "react-bootstrap";
 
 function StoreItem() {
   return (
@@ -19,4 +20,4 @@ function StoreItem() {
   );
 }
 
-export default StoreItem
+export default StoreItem;

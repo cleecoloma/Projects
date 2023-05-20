@@ -21,12 +21,6 @@ function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
   return (
     <Card className="h-100">
       <ImageSlide imgUrl={imgUrl} />
-      {/* <Card.Img
-        variant="top"
-        src={imgUrl}
-        height="350px"
-        style={{ objectFit: "cover" }}
-      /> */}
       <Card.Body className="d-flex flex-column">
         <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
           <span className="fs-2">{name}</span>
